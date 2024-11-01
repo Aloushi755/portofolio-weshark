@@ -1,8 +1,9 @@
 import React from 'react';
+import Image from 'next/image';
 import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => (
-    <footer className='w-full py-12 bg-green_spotify z-20 '>
+    <footer className='w-full py-12 bg-green_spotify z-20'>
         <div className='flex flex-col md:flex-row justify-center text-left mx-auto max-w-5xl pl-20 xl:pl-0 text-white'>
             <div className='flex flex-col gap-2 mr-auto pb-8 md:pb-0'>
                 <h3 className='text-green_light py-2 font-medium uppercase'>Contact</h3>
@@ -31,33 +32,35 @@ const Footer = () => (
                     <SocialIcon
                         url="https://www.linkedin.com/in/your-profile"
                         aria-label="LinkedIn"
-                        className="w-8 h-8 text-green_army hover:text-green_light"
+                        className="rounded-full w-8 h-8 text-green_army hover:text-green_light"
                         bgColor="transparent"
                         fgColor="currentColor"
                     />
                     <SocialIcon
                         url="https://www.facebook.com/your-profile"
                         aria-label="Facebook"
-                        className="w-8 h-8 text-green_army hover:text-green_light"
+                        className="rounded-full w-8 h-8 text-green_army hover:text-green_light"
                         bgColor="transparent"
                         fgColor="currentColor"
                     />
                     <SocialIcon
                         url="https://www.instagram.com/your-profile"
                         aria-label="Instagram"
-                        className="w-8 h-8 text-green_army hover:text-green_light"
+                        className="rounded-full w-8 h-8 text-green_army hover:text-green_light"
                         bgColor="transparent"
                         fgColor="currentColor"
                     />
                 </div>
             </div>
         </div>
-        <div className='flex items-end w-full pt-24 md:pt-8'>
+        <div className='flex justify-end w-full pt-24 md:pt-8'>
             <a href="#">
-                <img
-                    className='ml-auto w-4/5 md:w-3/5'
+                <Image
+                    className='object-cover'
                     src="/footer_logo.png"
                     alt="Footer Image"
+                    width={800}
+                    height={800}
                 />
             </a>
         </div>

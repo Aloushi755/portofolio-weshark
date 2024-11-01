@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => (
@@ -27,7 +28,14 @@ const Hero = () => (
                 </a>
             </div>
             <div className='flex flex-col md:flex-row justify-center items-center mx-auto pl-10 md:pl-0'>
-                <img loading='lazy' className='w-80 h-80 sm:w-96 sm:h-96 rounded-full object-cover object-right-top border-4 border-green_light' src="/passion.jpg" alt="Hero Image" />
+                <Image
+                    className='rounded-full object-cover object-left-top border-4 border-green_light w-96 h-96'
+                    src="/passion.jpg"
+                    alt="Hero Image"
+                    width={384}
+                    height={384}
+                    priority={true}
+                />
             </div>
         </div>
     </section>

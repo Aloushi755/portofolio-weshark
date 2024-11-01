@@ -44,7 +44,7 @@ export const SkillSlider = () => {
     }, [api, current]);
 
     return (
-        <div className="relative w-full py-20 lg:py-40">
+        <div className="relative w-full py-20 lg:py-40 bg-white">
             <div className="container mx-auto px-4 md:px-8">
                 <div className="flex flex-col gap-6 md:gap-10 mx-auto ml-14 md:ml-16 lg:ml-20">
                     <h2 className="text-green_dark text-xl md:text-2xl lg:text-3xl tracking-tighter lg:max-w-xl font-regular text-left uppercase">

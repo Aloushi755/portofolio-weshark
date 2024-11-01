@@ -3,7 +3,7 @@ import NewProjectCase from './NewProjectCase';
 
 const NewProject = () => {
     return (
-        <section className='flex flex-col justify-center items-start gap-6 w-full h-auto py-16'>
+        <section className='flex flex-col justify-center items-start gap-6 w-full h-auto py-16 bg-white'>
             <div className='flex flex-col justify-center items-start gap-2 w-full ml-14 md:ml-20 lg:ml-24 sm:max-w-lg lg:max-w-3xl mx-auto p-4'>
                 <h2 className="text-green_dark text-xl md:text-2xl lg:text-3xl tracking-tighter lg:max-w-xl font-regular text-left uppercase">
                     A showcase of projects <br /> <span className="text-green_light font-bold italic">Highlighted works</span>

@@ -17,6 +17,7 @@ module.exports = {
   			green_army: '#6B897E',
   			green_oliven: '#778077',
 			green_spotify: '#121212',
+			green_space: '#0c221f',
   		},
   		fontSize: {
   			mega: '14rem',
@@ -27,10 +28,6 @@ module.exports = {
   		},
   		backgroundImage: {
   			'about-image': "url('/about.jpg')"
-  		},
-      
-  		images: {
-  			'hero-image': "url('/alimoussa.jpg')"
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
