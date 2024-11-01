@@ -53,7 +53,7 @@ const Footer = () => (
                 </div>
             </div>
         </div>
-        <div className='flex justify-end ml-auto w-1/2 md:w-full pt-24 md:pt-8 px-4'>
+        <div className='flex justify-end ml-auto w-4/5 md:w-full pt-24 md:pt-8 px-4'>
             <a href="#">
                 <Image
                     src="/footer_logo.png"
