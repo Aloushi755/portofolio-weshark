@@ -11,3 +11,12 @@ body {
     --radius: 0.5rem;
   }
 }
+
+.custom-pagination .swiper-pagination-bullet {
+  background-color: #9f9f9f;
+  opacity: 1;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: #1ffcb3;
+}
