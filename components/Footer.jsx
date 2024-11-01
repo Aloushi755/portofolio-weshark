@@ -53,14 +53,14 @@ const Footer = () => (
                 </div>
             </div>
         </div>
-        <div className='flex justify-end w-full pt-24 md:pt-8'>
+        <div className='flex justify-end ml-auto w-1/2 md:w-full pt-24 md:pt-8 px-4'>
             <a href="#">
                 <Image
-                    className='object-cover'
                     src="/footer_logo.png"
-                    alt="Footer Image"
+                    alt="Footer Logo"
                     width={800}
                     height={800}
+                    priority={true}
                 />
             </a>
         </div>
