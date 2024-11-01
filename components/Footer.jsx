@@ -2,7 +2,7 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => (
-    <footer className='w-full py-12 bg-green_dark z-20'>
+    <footer className='w-full py-12 bg-green_spotify z-20 '>
         <div className='flex flex-col md:flex-row justify-center text-left mx-auto max-w-5xl pl-20 xl:pl-0 text-white'>
             <div className='flex flex-col gap-2 mr-auto pb-8 md:pb-0'>
                 <h3 className='text-green_light py-2 font-medium uppercase'>Contact</h3>

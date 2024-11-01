@@ -15,7 +15,8 @@ module.exports = {
   			green_lime: '#3BE186',
   			green_turkish: '#5EB9B3',
   			green_army: '#6B897E',
-  			green_oliven: '#778077'
+  			green_oliven: '#778077',
+			green_spotify: '#121212',
   		},
   		fontSize: {
   			mega: '14rem',
