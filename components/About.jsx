@@ -14,7 +14,7 @@ const About = () => (
                 quality={75}
                 priority={true}
             />
-            <div className="absolute inset-0 bg-black opacity-70"></div>
+            <div className="absolute inset-0 bg-black opacity-80"></div>
         </div>
 
         <div className="flex flex-col justify-center items-start gap-4 w-full ml-16 sm:ml-24 max-w-sm sm:max-w-lg lg:max-w-5xl mx-auto p-4 text-white z-10">
