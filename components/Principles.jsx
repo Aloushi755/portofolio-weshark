@@ -68,8 +68,9 @@ const Principles = () => (
                         description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                     />
                 </SwiperSlide>
+                <div className="flex justify-center gap-4 mx-auto custom-pagination swiper-pagination mt-6"></div>
             </Swiper>
-            <div className="flex justify-center gap-4 mx-auto custom-pagination swiper-pagination mt-6"></div>
+
         </div>
     </section>
 );
