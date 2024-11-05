@@ -70,7 +70,6 @@ const Principles = () => (
                 </SwiperSlide>
                 <div className="flex justify-center gap-4 mx-auto custom-pagination swiper-pagination mt-6"></div>
             </Swiper>
-
         </div>
     </section>
 );
