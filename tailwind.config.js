@@ -18,6 +18,7 @@ module.exports = {
   			green_oliven: '#778077',
 			green_spotify: '#121212',
 			green_space: '#0c221f',
+			dark_shade: '#1F2C2D',
   		},
   		fontSize: {
   			mega: '14rem',
