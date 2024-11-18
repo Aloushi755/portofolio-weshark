@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
   :root {
     --radius: 0.5rem;
@@ -19,4 +15,8 @@ body {
 
 .custom-pagination .swiper-pagination-bullet-active {
   background-color: #1ffcb3;
+}
+
+.swiper {
+  touch-action: pan-y;
 }

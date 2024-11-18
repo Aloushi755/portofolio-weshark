@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 
 const Layout = ({ children }) => (
   <html>
-    <title>Weshark</title>
+    <title>WESHARK</title>
     <body className={montserrat.className}>
       <div className="layout">
         <Sidebar />

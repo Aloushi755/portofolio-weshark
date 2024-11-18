@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import About from '../components/About';
 import Principles from '../components/Principles';
 import Footer from '../components/Footer';
 import { SkillSlider } from '../components/SkillSlider';
