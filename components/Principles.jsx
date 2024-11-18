@@ -13,7 +13,7 @@ const Principles = () => (
         <div className='flex flex-col justify-center items-start gap-2 w-full ml-12 md:ml-20 lg:ml-24 -mb-16 sm:max-w-lg lg:max-w-3xl mx-auto p-4'>
             <h3 className='text-white text-xl md:text-2xl lg:text-3xl uppercase'>Work approach <br /> <span className='text-green_light font-bold italic'>My 4 core principles</span></h3>
         </div>
-        <div className='w-full max-w-4xl md:max-w-5xl lg:max-w-6xl mx-auto pl-14 md:pl-20 lg:pl-24 z-50'>
+        <div className='w-full max-w-5xl md:max-w-5xl lg:max-w-6xl mx-auto pl-14 md:pl-20 lg:pl-24 z-50'>
             <Swiper
                 modules={[Pagination, A11y]}
                 spaceBetween={10}
@@ -51,21 +51,21 @@ const Principles = () => (
                     <PrincipleCard
                         number="2"
                         title="Technical"
-                        description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <PrincipleCard
                         number="3"
                         title="Quality"
-                        description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <PrincipleCard
                         number="4"
                         title="Team Work"
-                        description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
                     />
                 </SwiperSlide>
                 <div className="flex justify-center gap-4 mx-auto custom-pagination swiper-pagination mt-6"></div>
