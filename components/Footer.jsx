@@ -30,21 +30,21 @@ const Footer = () => (
                 <h3 className='text-green_light font-medium uppercase'>Follow Me</h3>
                 <div className='flex gap-1 -ml-3'>
                     <SocialIcon
-                        url="https://www.linkedin.com/in/your-profile"
+                        url="https://www.linkedin.com/in/ali-el-haj-moussa-b25b98289/"
                         aria-label="LinkedIn"
                         className="rounded-full w-8 h-8 text-green_army hover:text-green_light"
                         bgColor="transparent"
                         fgColor="currentColor"
                     />
                     <SocialIcon
-                        url="https://www.facebook.com/your-profile"
+                        url="https://www.facebook.com/aloushi.moussa/"
                         aria-label="Facebook"
                         className="rounded-full w-8 h-8 text-green_army hover:text-green_light"
                         bgColor="transparent"
                         fgColor="currentColor"
                     />
                     <SocialIcon
-                        url="https://www.instagram.com/your-profile"
+                        url="https://www.instagram.com/da_real_aloushi/"
                         aria-label="Instagram"
                         className="rounded-full w-8 h-8 text-green_army hover:text-green_light"
                         bgColor="transparent"
