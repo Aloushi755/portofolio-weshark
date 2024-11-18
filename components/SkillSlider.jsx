@@ -52,7 +52,7 @@ export const SkillSlider = () => {
                     </h2>
                     <div className="relative w-full">
 
-                        <div className="absolute top-0 left-0 w-10 h-56 ml-6 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+                        <div className="absolute top-0 left-0 w-10 h-56 ml-6 bg-gradient-to-r from-white z-10 to-transparent pointer-events-none"></div>
                         <Carousel setApi={setApi} className="w-full ml-6">
                             <CarouselContent className="flex gap-4 md:gap-2">
                                 {Array.from({ length: 10 }).map((_, index) => (
