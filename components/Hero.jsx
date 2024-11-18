@@ -11,7 +11,7 @@ const Hero = () => (
                 <h1 className='py-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white uppercase'>
                     My name is Ali Moussa <br />
                     <span
-                        className='text-green_light whitespace-nowrap'
+                        className='text-green_light font-bold italic whitespace-nowrap'
                         style={{ display: 'inline-block', minWidth: '250px' }}
                     >
                         <Typewriter
