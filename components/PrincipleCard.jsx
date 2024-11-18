@@ -3,7 +3,7 @@ import React from 'react';
 const PrincipleCard = ({ number, title, description }) => (
     <article className='flex w-full max-w-lg justify-center items-center mx-auto'>
         <div className='flex justify-center items-center gap-4'>
-            <div className='pt-12 pb-6 text-medium sm:text-mega text-green_light'>
+            <div className='pt-12 text-medium sm:text-mega text-green_light'>
                 {number}
             </div>
             <div className='flex flex-col justify-center items-start'>
