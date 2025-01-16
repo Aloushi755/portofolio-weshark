@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPython, FaPhp } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPhp } from 'react-icons/fa';
 import { SiTailwindcss, SiFirebase, SiMongodb, SiPostgresql, SiDocker, SiGithub, SiTypescript } from 'react-icons/si';
 
 import {
@@ -10,7 +10,7 @@ import {
     CarouselItem,
 } from "./ui/carousel";
 
-export const SkillSlider = () => {
+export function SkillSlider() {
     const [api, setApi] = useState();
     const [current, setCurrent] = useState(0);
 
@@ -32,7 +32,7 @@ export const SkillSlider = () => {
             return;
         }
 
-        setTimeout(() => {
+        const timer = setTimeout(() => {
             if (api.selectedScrollSnap() + 1 === api.scrollSnapList().length) {
                 setCurrent(0);
                 api.scrollTo(0);
@@ -41,6 +41,8 @@ export const SkillSlider = () => {
                 setCurrent(current + 1);
             }
         }, 1000);
+
+        return () => clearTimeout(timer); // Cleanup timeout on unmount
     }, [api, current]);
 
     return (
@@ -51,7 +53,6 @@ export const SkillSlider = () => {
                         Languages and Tools <br /> <span className="text-green_light font-bold italic">in My Shark Tank</span>
                     </h2>
                     <div className="relative w-full">
-
                         <div className="absolute top-0 left-0 w-10 h-56 ml-6 bg-gradient-to-r from-white z-30 to-transparent pointer-events-none"></div>
                         <Carousel setApi={setApi} className="w-full ml-6 z-20">
                             <CarouselContent className="flex gap-4 md:gap-2">
@@ -74,4 +75,4 @@ export const SkillSlider = () => {
             </div>
         </div>
     );
-};
+}

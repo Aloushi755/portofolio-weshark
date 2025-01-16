@@ -1,7 +1,9 @@
+"use client";
 import React from 'react';
-import NewProjectCase from './NewProjectCase';
+import { NewProjectCase } from './NewProjectCase';
 
-const NewProject = () => {
+
+export function NewProject() {
     return (
         <section className='flex flex-col justify-center items-start gap-6 w-full h-auto py-16 bg-white'>
             <div className='flex flex-col justify-center items-start gap-2 w-full ml-14 md:ml-20 lg:ml-24 sm:max-w-lg lg:max-w-3xl mx-auto p-4'>
@@ -32,6 +34,4 @@ const NewProject = () => {
             </div>
         </section>
     );
-};
-
-export default NewProject;
+}

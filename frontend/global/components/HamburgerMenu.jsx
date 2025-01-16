@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { FaGripLines } from "react-icons/fa6";
 import { GiSharkBite } from "react-icons/gi";
 
-const HamburgerMenu = () => {
+export function HamburgerMenu() {
     const [nav, setNav] = useState(false);
 
     const handleNav = () => {
@@ -26,6 +26,4 @@ const HamburgerMenu = () => {
             </nav>
         </aside>
     );
-};
-
-export default HamburgerMenu;
+}
