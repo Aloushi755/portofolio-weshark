@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 export function Principles() {
     return (
         <section className='flex flex-col justify-center items-start w-full h-auto py-12 px-4 md:px-0 bg-green_dark'>
-            <div className='flex flex-col justify-center items-start gap-2 w-full ml-12 md:ml-20 lg:ml-24 -mb-16 sm:max-w-lg lg:max-w-3xl mx-auto p-4'>
+            <div className='flex flex-col justify-center items-start gap-2 w-full ml-8 md:ml-20 lg:ml-24 -mb-16 sm:max-w-lg lg:max-w-3xl mx-auto p-4'>
                 <h3 className='text-white text-xl md:text-2xl lg:text-3xl uppercase'>
                     Work approach <br />
                     <span className='text-green_light font-bold italic'>My 4 core principles</span>

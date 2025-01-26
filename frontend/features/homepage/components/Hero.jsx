@@ -6,9 +6,9 @@ import { Typewriter } from 'react-simple-typewriter';
 export function Hero() {
     return (
         <section className='w-full bg-green_dark'>
-            <div className="flex flex-col lg:flex-row justify-center items-center max-w-6xl py-20 mx-auto">
+            <div className="flex flex-col lg:flex-row justify-bewteen items-center max-w-7xl py-20 mx-auto">
                 <div className='flex flex-col justify-center items-start w-full py-10 pl-20 md:pl-32 lg:pl-10 lg:ml-16 lg:w-1/2'>
-                    <h1 className='py-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white uppercase'>
+                    <h1 className='py-4 text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] lg:leading-[2.7rem] text-white uppercase'>
                         My name is Ali Moussa <br />
                         <span
                             className='text-green_light font-bold italic whitespace-nowrap'
@@ -27,13 +27,13 @@ export function Hero() {
                         Download CV
                     </a>
                 </div>
-                <div className='flex flex-col md:flex-row justify-center items-center mx-auto pl-10 md:pl-0'>
+                <div className='flex flex-col md:flex-row justify-center items-center mx-auto pl-12 md:pl-0'>
                     <Image
-                        className='rounded-full object-cover object-left-top border-4 border-green_light w-96 h-96'
+                        className='rounded-full object-cover object-left-top border-4 border-green_light w-80 h-80 lg:w-[400px] lg:h-[400px]'
                         src="/passion.jpg"
                         alt="Hero Image"
-                        width={384}
-                        height={384}
+                        width={500}
+                        height={500}
                         priority={true}
                     />
                 </div>
