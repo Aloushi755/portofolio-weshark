@@ -1,9 +1,6 @@
 "use client";
-
 import {
-  Navbar,
   Sidebar,
-  HamburgerMenu,
 } from '@/global/components';
 
 import './globals.css';
@@ -24,8 +21,6 @@ export default function RootLayout({ children }) {
         <div className="layout">
           <Sidebar />
           <div className="main-content">
-            <Navbar />
-            <HamburgerMenu />
             <main>{children}</main>
           </div>
         </div>

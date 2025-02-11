@@ -6,8 +6,8 @@ import { Typewriter } from 'react-simple-typewriter';
 export function Hero() {
     return (
         <section className='w-full bg-green_dark'>
-            <div className="flex flex-col lg:flex-row justify-bewteen items-center max-w-7xl py-20 mx-auto">
-                <div className='flex flex-col justify-center items-start w-full py-10 pl-20 md:pl-32 lg:pl-10 lg:ml-16 lg:w-1/2'>
+            <div className="flex flex-col lg:flex-row justify-bewteen items-center max-w-7xl py-20 lg:py-28 mx-auto gap-6">
+                <div className='flex flex-col justify-center items-start w-full pl-20 md:pl-32 lg:pl-10 lg:ml-16 lg:w-1/2'>
                     <h1 className='py-4 text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] lg:leading-[2.7rem] text-white uppercase'>
                         My name is Ali Moussa <br />
                         <span
