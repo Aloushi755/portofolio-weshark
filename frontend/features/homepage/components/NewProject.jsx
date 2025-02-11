@@ -12,7 +12,7 @@ export function NewProject() {
                 </h2>
             </div>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pl-10 lg:pl-10 md:pl-0 gap-12 md:gap-8 w-4/5 mx-auto'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pl-10 lg:pl-10 md:pl-0 gap-12 md:gap-10 w-4/5 mx-auto'>
                 <NewProjectCase
                     title="Shopify"
                     description="Lorem ipsum, dolor sit amet consectetur"
