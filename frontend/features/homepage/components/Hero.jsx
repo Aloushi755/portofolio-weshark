@@ -6,9 +6,9 @@ import { Typewriter } from 'react-simple-typewriter';
 export function Hero() {
     return (
         <section className='w-full bg-green_dark'>
-            <div className="flex flex-col lg:flex-row justify-bewteen items-center max-w-7xl py-20 lg:py-28 mx-auto gap-6">
-                <div className='flex flex-col justify-center items-start w-full pl-20 md:pl-32 lg:pl-10 lg:ml-16 lg:w-1/2'>
-                    <h1 className='py-4 text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] lg:leading-[2.7rem] text-white uppercase'>
+            <div className="flex flex-col-reverse lg:flex-row justify-bewteen items-center max-w-7xl py-16 sm:py-20 lg:py-28 mx-auto gap-6">
+                <div className='flex flex-col justify-center items-start w-full pl-12 md:pl-32 lg:pl-10 lg:ml-16 lg:w-1/2'>
+                    <h1 className='py-4 text-lg leading-6 sm:text-2xl md:text-3xl lg:text-[2.5rem] lg:leading-[2.7rem] text-white uppercase'>
                         My name is Ali Moussa <br />
                         <span
                             className='text-green_light font-bold italic whitespace-nowrap'
@@ -27,7 +27,7 @@ export function Hero() {
                         Download CV
                     </a>
                 </div>
-                <div className='flex flex-col md:flex-row justify-center items-center mx-auto pl-12 md:pl-0'>
+                <div className='flex flex-col md:flex-row justify-center items-center mx-auto md:pl-0'>
                     <Image
                         className='rounded-full object-cover object-left-top border-4 border-green_light w-80 h-80 lg:w-[400px] lg:h-[400px]'
                         src="/passion.jpg"

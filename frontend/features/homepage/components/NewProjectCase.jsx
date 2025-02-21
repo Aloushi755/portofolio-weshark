@@ -1,19 +1,20 @@
-"use client";
-import React from 'react';
+import { CircleArrowRight } from 'lucide-react';
 
 export function NewProjectCase({ title, description, imageSrc, href }) {
     return (
-        <article className='flex flex-col justify-center items-center rounded-xl overflow-hidden shadow-lg w-full sm:w-80 transform transition-transform duration-300 hover:scale-110'>
-            <div className='h-40 sm:h-56 bg-green_light rounded-t-lg w-full'>
-                {/* Uncomment the line below to display the image */}
-                {/* <img loading='lazy' src={imageSrc} alt={title} className='w-full h-full rounded-t-lg' /> */}
+        <div className="flex flex-col justify-start items-start w-full max-w-sm mx-auto h-auto pt-8 bg-green_spotify shadow-lg rounded-xl overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105">
+            <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
+            <div className="flex flex-col justify-start items-start gap-2 w-full p-4">
+                <h2 className="text-white text-xl md:text-xl tracking-tighter font-bold text-left uppercase">
+                    {title} <span className="text-green_light">.</span>
+                </h2>
+                <p className="text-white text-xs max-w-48 font-light">{description}</p>
+                <div className="flex justify-between items-center w-full mt-2">
+                    <a href={href} className="text-green_light hover:text-green_medium transition-colors duration-200">
+                        <CircleArrowRight size={30} />
+                    </a>
+                </div>
             </div>
-            <div className='w-full sm:w-80 h-28 sm:h-36 p-4 sm:p-6 bg-green_dark rounded-b-lg'>
-                <h3 className='py-2 text-white font-bold uppercase text-sm sm:text-base'>
-                    {title} <span className='text-md sm:text-xl text-green_light'>.</span>
-                </h3>
-                <p className='text-green_army'>{description}</p>
-            </div>
-        </article>
+        </div>
     );
 }

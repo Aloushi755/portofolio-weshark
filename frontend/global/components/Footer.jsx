@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons';
 export function Footer() {
     return (
         <footer className='w-full py-12 bg-green_spotify z-20'>
-            <div className='flex flex-col md:flex-row justify-center text-left mx-auto max-w-5xl pl-20 xl:pl-0 text-white'>
+            <div className='flex flex-col md:flex-row justify-center text-left mx-auto max-w-5xl pl-6 md:pl-20 xl:pl-0 text-white'>
                 <div className='flex flex-col gap-2 mr-auto pb-8 md:pb-0'>
                     <h3 className='text-green_light py-2 font-medium uppercase'>Contact</h3>
                     <p className='text-sm'>
@@ -55,7 +55,7 @@ export function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-end ml-auto w-4/5 md:w-full pt-24 md:pt-8 px-4'>
+            <div className='flex justify-end ml-auto w-4/5 md:w-full pt-12 md:pt-8 px-4'>
                 <a href="#">
                     <Image
                         src="/footer_logo.png"

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export function Sidebar() {
     return (
-        <aside className="flex w-8 md:w-12 h-screen bg-green_medium fixed z-10">
+        <aside className="flex w-8 md:w-12 h-screen sm:bg-green_medium fixed z-10">
             <div className="flex flex-col pt-4 px-1 md:px-2">
                 <a href="#">
                     <Image

@@ -24,7 +24,8 @@ module.exports = {
   		},
   		fontSize: {
   			mega: '14rem',
-  			medium: '10rem'
+  			medium: '10rem',
+			small: '8rem'
   		},
   		fontFamily: {
   			montserrat: ['Montserrat', 'sans-serif']
