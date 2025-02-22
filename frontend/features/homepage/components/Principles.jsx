@@ -21,7 +21,7 @@ export function Principles() {
                 <Swiper
                     modules={[Pagination, A11y]}
                     spaceBetween={10}
-                    slidesPerView={2}
+                    slidesPerView={1}
                     grabCursor={true}
                     simulateTouch={true}
                     touchRatio={1}
