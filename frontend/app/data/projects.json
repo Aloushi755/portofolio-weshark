@@ -1,19 +1,19 @@
 [
   {
     "title": "Resbook User",
-    "description": "A booking system for users to make reservations.",
+    "description": "A booking system for users to make and mannage reservations.",
     "imageSrc": "/resbookuser.png",
     "href": "https://resbook.vercel.app"
   },
   {
     "title": "FS Holstebro",
-    "description": "Admin panel for managing bookings from users.",
+    "description": "A website created for a local football club in Holstebro.",
     "imageSrc": "/fsholstebro.png",
     "href": "https://fsholstebro.dk"
   },
   {
     "title": "Mealmate",
-    "description": "A productivity app to plan and organize tasks efficiently.",
+    "description": "An AI-powered web app designed to generate personalized recipes.",
     "imageSrc": "/Mealmate.png",
     "href": "https://fan.frederikbarbre.dk"
   }
