@@ -6,15 +6,15 @@
     "href": "https://resbook.vercel.app"
   },
   {
-    "title": "Planmate",
-    "description": "A productivity app to plan and organize tasks efficiently.",
-    "imageSrc": "/resbookuser.png",
-    "href": "#"
+    "title": "FS Holstebro",
+    "description": "Admin panel for managing bookings from users.",
+    "imageSrc": "/fsholstebro.png",
+    "href": "https://fsholstebro.dk"
   },
   {
-    "title": "Resbook Admin",
-    "description": "Admin panel for managing bookings from users.",
-    "imageSrc": "/resbookadmin.png",
-    "href": "https://resbookadmin.vercel.app/"
+    "title": "Mealmate",
+    "description": "A productivity app to plan and organize tasks efficiently.",
+    "imageSrc": "/Mealmate.png",
+    "href": "https://fan.frederikbarbre.dk"
   }
 ]

@@ -1,10 +1,5 @@
-import {
-  Sidebar,
-  SmoothScrolling,
-} from '@/global/components';
-
+import { Sidebar, SmoothScrolling } from '@/global/components';
 import './globals.css';
-
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({
@@ -19,6 +14,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>WESHARK</title>
       </head>
+
       <body className={montserrat.className}>
         <SmoothScrolling>
           <div className="layout">
@@ -32,4 +28,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-

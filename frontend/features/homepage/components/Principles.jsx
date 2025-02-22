@@ -21,7 +21,7 @@ export function Principles() {
                 <Swiper
                     modules={[Pagination, A11y]}
                     spaceBetween={10}
-                    slidesPerView={1}
+                    slidesPerView={2}
                     grabCursor={true}
                     simulateTouch={true}
                     touchRatio={1}
@@ -73,7 +73,7 @@ export function Principles() {
                         />
                     </SwiperSlide>
                 </Swiper>
-                <div className="flex justify-center gap-2 mx-auto custom-pagination swiper-pagination -mb-4 sm:mt-8 sm:mb-0 "></div>
+                <div className="flex justify-center gap-2 mx-auto custom-pagination swiper-pagination -mb-4 sm:mt-8 sm:mb-0 z-60 "></div>
             </div>
         </section>
     );
