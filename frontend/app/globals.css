@@ -26,3 +26,7 @@ body {
 .text-green_light {
   will-change: contents;
 }
+
+.will-change-transform {
+  will-change: transform;
+}
