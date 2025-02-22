@@ -15,6 +15,7 @@ export function Hero() {
                             style={{ display: 'inline-block', minWidth: '250px' }}
                         >
                             <Typewriter
+                                key={Math.random()}
                                 words={["I'm a Frontend Developer", "Shark is my middle name", "And I'm a Web Enthusiast"]}
                                 loop={true}
                                 typeSpeed={60}

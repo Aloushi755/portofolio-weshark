@@ -5,5 +5,6 @@ export * from "./Navbar";
 export * from "./HamburgerMenu";
 export * from "./Sidebar";
 export * from "./Footer";
+export * from "./SmoothScrolling";
 
 

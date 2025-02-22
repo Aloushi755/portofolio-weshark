@@ -17,7 +17,7 @@ export function Principles() {
                     <span className='text-green_light font-bold italic'>My 4 core principles</span>
                 </h3>
             </div>
-            <div className='relative w-full max-w-5xl md:max-w-5xl lg:max-w-6xl mx-auto pl-6 md:pl-20 lg:pl-24 sm:py-0 z-50'>
+            <div className='relative w-full max-w-5xl md:max-w-5xl lg:max-w-[90%] mx-auto pl-6 md:pl-20 lg:pl-24 sm:py-0 z-50'>
                 <Swiper
                     modules={[Pagination, A11y]}
                     spaceBetween={10}

@@ -1,6 +1,6 @@
-"use client";
 import {
   Sidebar,
+  SmoothScrolling,
 } from '@/global/components';
 
 import './globals.css';
@@ -15,15 +15,19 @@ const montserrat = Montserrat({
 
 export default function RootLayout({ children }) {
   return (
-    <html>
-      <title>WESHARK</title>
+    <html lang="en">
+      <head>
+        <title>WESHARK</title>
+      </head>
       <body className={montserrat.className}>
-        <div className="layout">
-          <Sidebar />
-          <div className="main-content">
-            <main>{children}</main>
+        <SmoothScrolling>
+          <div className="layout">
+            <Sidebar />
+            <div className="main-content">
+              <main>{children}</main>
+            </div>
           </div>
-        </div>
+        </SmoothScrolling>
       </body>
     </html>
   );
