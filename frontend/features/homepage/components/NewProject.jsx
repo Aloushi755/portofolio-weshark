@@ -28,7 +28,7 @@ export function NewProject() {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:pl-10 md:pl-0 gap-8 md:gap-10 w-4/5 mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:pl-10 md:pl-0 gap-8 md:gap-6 w-4/5 mx-auto">
 
                     {projects.length > 0 ? (
                         projects.map((project, index) => (

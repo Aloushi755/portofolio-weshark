@@ -12,7 +12,7 @@ export function NewProjectCase({ title, description, imageSrc, href }) {
                     <h2 className="text-white text-xl md:text-xl tracking-tighter font-bold text-left uppercase">
                         {title} <span className="text-green_light">.</span>
                     </h2>
-                    <p className="text-white text-xs max-w-52 font-light">{description}</p>
+                    <p className="text-white text-[0.8rem] max-w-60 font-light">{description}</p>
                     <div className="flex justify-between items-center w-full mt-2">
                         <span className="text-green_light hover:text-green_medium transition-colors duration-200">
                             <CircleArrowRight size={30} />
