@@ -23,10 +23,6 @@ body {
   background-color: #1ffcb3;
 }
 
-.text-green_light {
-  will-change: contents;
-}
-
-.will-change-transform {
-  will-change: transform;
+.oblique {
+  font-style: oblique;
 }

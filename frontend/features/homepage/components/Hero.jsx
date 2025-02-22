@@ -11,7 +11,7 @@ export function Hero() {
                     <h1 className='py-4 text-xl leading-6 sm:text-2xl md:text-3xl lg:text-[2.5rem] lg:leading-[2.7rem] text-white uppercase'>
                         My name is Ali Moussa <br />
                         <span
-                            className='text-green_light font-bold italic whitespace-nowrap relative z-10'
+                            className='text-green_light font-extrabold oblique subpixel-antialiased whitespace-nowrap relative z-10 will-change-transform'
                             style={{ display: 'inline-block', minWidth: '250px' }}
                         >
                             <Typewriter
