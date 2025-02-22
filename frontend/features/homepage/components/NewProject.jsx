@@ -20,7 +20,7 @@ export function NewProject() {
 
     return (
         <section className="w-full bg-[#0d0c0c]">
-            <div className="flex flex-col justify-center items-start max-w-7xl mx-auto h-auto py-6 md:py-16 bg-[#0d0c0c]">
+            <div className="flex flex-col justify-center items-start max-w-7xl mx-auto h-auto py-16 bg-[#0d0c0c]">
                 <div className="flex flex-col justify-center items-start gap-2 w-full py-4 md:py-10 pl-12 md:pl-32 lg:pl-10 lg:ml-16 lg:w-1/2">
                     <h2 className="text-white text-xl md:text-2xl lg:text-3xl tracking-tighter lg:max-w-7xl font-regular text-left uppercase">
                         A showcase of projects <br />
