@@ -55,7 +55,7 @@ export function SkillSlider() {
                     <div className="relative w-full">
                         <div className="absolute top-0 left-0 w-24 h-32 md:h-56 ml-6 bg-gradient-to-r from-[#0d0c0c] via-[#0d0c0c]/35 to-transparent z-30 pointer-events-none"></div>
                         <div className="absolute top-0 right-0 w-24 h-32 md:h-56 bg-gradient-to-l from-[#0d0c0c] via-[#0d0c0c]/35 to-transparent z-30 pointer-events-none"></div>
-                        <Carousel setApi={setApi} className="ml-6 z-20">
+                        <Carousel loop={true} autoplay={true} setApi={setApi} className="ml-6 z-20">
                             <CarouselContent className="flex gap-4 md:gap-2">
                                 {Array.from({ length: 10 }).map((_, index) => (
                                     <CarouselItem

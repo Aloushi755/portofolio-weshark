@@ -16,7 +16,7 @@ export function Hero() {
                         >
                             <Typewriter
                                 key={Math.random()}
-                                words={["I'm a Frontend Developer", "Shark is my middle name", "And I'm a Web Enthusiast"]}
+                                words={["I'm a Fullstack Developer", "Shark is my middle name", "And I'm a Web Enthusiast"]}
                                 loop={true}
                                 typeSpeed={60}
                                 deleteSpeed={30}

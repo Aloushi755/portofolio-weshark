@@ -28,6 +28,8 @@ const Carousel = React.forwardRef(
             plugins,
             className,
             children,
+            loop = true,
+            autoplay = true,
             ...props
         },
         ref
@@ -36,6 +38,11 @@ const Carousel = React.forwardRef(
             {
                 ...opts,
                 axis: orientation === "horizontal" ? "x" : "y",
+                loop,
+                dragFree: true,
+                containScroll: "trimSnaps",
+                speed: 5,
+                skipSnaps: false
             },
             plugins
         )
@@ -52,12 +59,14 @@ const Carousel = React.forwardRef(
         }, [])
 
         const scrollPrev = React.useCallback(() => {
-            api?.scrollPrev()
-        }, [api])
+            api?.scrollPrev();
+        }, [api]);
 
         const scrollNext = React.useCallback(() => {
-            api?.scrollNext()
-        }, [api])
+            api?.scrollNext();
+        }, [api]);
+
+
 
         const handleKeyDown = React.useCallback(
             (event) => {
@@ -71,6 +80,25 @@ const Carousel = React.forwardRef(
             },
             [scrollPrev, scrollNext]
         )
+
+        React.useEffect(() => {
+            if (!api || !autoplay) return;
+
+            const autoScroll = () => {
+                if (!api.canScrollNext()) {
+                    api.scrollTo(0);
+                } else {
+                    api.scrollNext();
+                }
+            };
+
+            const intervalId = setInterval(autoScroll, 3000);
+
+            return () => clearInterval(intervalId);
+        }, [api, autoplay]);
+
+
+
 
         React.useEffect(() => {
             if (!api || !setApi) {
@@ -164,7 +192,7 @@ CarouselItem.displayName = "CarouselItem"
 
 const CarouselPrevious = React.forwardRef(
     ({ className, variant = "outline", size = "icon", ...props }, ref) => {
-        const { orientation, scrollPrev, canScrollPrev } = useCarousel()
+        const { orientation, scrollPrev } = useCarousel()
 
         return (
             <Button
@@ -172,13 +200,12 @@ const CarouselPrevious = React.forwardRef(
                 variant={variant}
                 size={size}
                 className={cn(
-                    "absolute  h-8 w-8 rounded-full",
+                    "absolute h-8 w-8 rounded-full",
                     orientation === "horizontal"
                         ? "-left-12 top-1/2 -translate-y-1/2"
                         : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
                     className
                 )}
-                disabled={!canScrollPrev}
                 onClick={scrollPrev}
                 {...props}
             >
@@ -188,11 +215,10 @@ const CarouselPrevious = React.forwardRef(
         )
     }
 )
-CarouselPrevious.displayName = "CarouselPrevious"
 
 const CarouselNext = React.forwardRef(
     ({ className, variant = "outline", size = "icon", ...props }, ref) => {
-        const { orientation, scrollNext, canScrollNext } = useCarousel()
+        const { orientation, scrollNext } = useCarousel()
 
         return (
             <Button
@@ -206,7 +232,6 @@ const CarouselNext = React.forwardRef(
                         : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
                     className
                 )}
-                disabled={!canScrollNext}
                 onClick={scrollNext}
                 {...props}
             >
@@ -216,7 +241,6 @@ const CarouselNext = React.forwardRef(
         )
     }
 )
-CarouselNext.displayName = "CarouselNext"
 
 export {
     Carousel,
