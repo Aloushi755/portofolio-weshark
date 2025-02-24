@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPhp } from 'react-icons/fa';
-import { SiTailwindcss, SiFirebase, SiMongodb, SiPostgresql, SiDocker, SiGithub, SiTypescript } from 'react-icons/si';
+import { SiTailwindcss, SiFirebase, SiMongodb, SiPostgresql, SiDocker, SiGithub, SiTypescript, SiExpress, SiRemix } from 'react-icons/si';
 
 import {
     Carousel,
@@ -25,8 +25,14 @@ export function SkillSlider() {
         <SiTailwindcss />,
         <SiPostgresql />,
         <SiGithub />,
+        <SiExpress />,
+        <SiRemix />,
+        <SiMongodb />,
+        <SiTypescript />
     ];
 
+    // Create a new array with duplicated items at the start and end
+    const extendedIcons = [...icons.slice(-3), ...icons, ...icons.slice(0, 3)];
 
     return (
         <div className="relative w-full py-20 lg:py-40 bg-[#0d0c0c]">
@@ -40,14 +46,14 @@ export function SkillSlider() {
                         <div className="absolute top-0 right-0 w-24 h-32 md:h-56 bg-gradient-to-l from-[#0d0c0c] via-[#0d0c0c]/35 to-transparent z-30 pointer-events-none"></div>
                         <Carousel loop={true} autoplay={true} setApi={setApi} className="ml-6 z-20">
                             <CarouselContent className="flex gap-4 md:gap-2">
-                                {Array.from({ length: 10 }).map((_, index) => (
+                                {extendedIcons.map((icon, index) => (
                                     <CarouselItem
                                         className="basis-1/3 sm:basis-1/3 md:basis-1/4 lg:basis-1/6 flex-shrink-0"
                                         key={index}
                                     >
                                         <div className="flex rounded-xl aspect-square bg-muted items-center justify-center p-4 md:p-6 bg-green_darker">
-                                            <span className="text-6xl text-green_light md:text-6xl lg:text-8xl">
-                                                {icons[index]}
+                                            <span className="text-6xl text-green_light md:text-6xl lg:text-7xl">
+                                                {icon}
                                             </span>
                                         </div>
                                     </CarouselItem>

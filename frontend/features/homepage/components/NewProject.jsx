@@ -1,9 +1,16 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { NewProjectCase } from "./NewProjectCase";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+// Import React Icons
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 export function NewProject() {
     const [projects, setProjects] = useState([]);
+    const swiperRef = useRef(null);
 
     useEffect(() => {
         fetch("/api/projects")
@@ -17,6 +24,18 @@ export function NewProject() {
             .catch(error => console.error("Error fetching projects:", error));
     }, []);
 
+    // Navigation handlers
+    const handlePrev = () => {
+        if (swiperRef.current && swiperRef.current.swiper) {
+            swiperRef.current.swiper.slidePrev();
+        }
+    };
+
+    const handleNext = () => {
+        if (swiperRef.current && swiperRef.current.swiper) {
+            swiperRef.current.swiper.slideNext();
+        }
+    };
 
     return (
         <section className="w-full bg-[#0d0c0c]">
@@ -28,8 +47,56 @@ export function NewProject() {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:pl-10 md:pl-0 gap-8 md:gap-6 w-4/5 mx-auto">
+                {/* Mobile Swiper (visible on small screens) */}
+                <div className="block sm:hidden w-full pl-12">
+                    {projects.length > 0 ? (
+                        <div>
+                            <Swiper
+                                ref={swiperRef}
+                                slidesPerView={1.15}
+                                spaceBetween={16}
+                                className="mySwiper"
+                            >
+                                {projects.map((project, index) => (
+                                    <SwiperSlide
+                                        key={index}
+                                        className={index === projects.length - 1 ? "pr-6" : ""}
+                                    >
+                                        <NewProjectCase
+                                            title={project.title}
+                                            description={project.description}
+                                            imageSrc={project.imageSrc}
+                                            href={project.href}
+                                        />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
 
+                            {/* Custom Navigation Arrows with React Icons */}
+                            <div className="flex justify-center gap-6 mt-8">
+                                <button
+                                    onClick={handlePrev}
+                                    className="w-10 h-10 rounded-full flex items-center justify-center bg-[#1a1a1a] border border-green_light text-green_light hover:bg-green_light hover:text-black transition-colors duration-300"
+                                    aria-label="Previous project"
+                                >
+                                    <IoIosArrowBack size={20} />
+                                </button>
+                                <button
+                                    onClick={handleNext}
+                                    className="w-10 h-10 rounded-full flex items-center justify-center bg-[#1a1a1a] border border-green_light text-green_light hover:bg-green_light hover:text-black transition-colors duration-300"
+                                    aria-label="Next project"
+                                >
+                                    <IoIosArrowForward size={20} />
+                                </button>
+                            </div>
+                        </div>
+                    ) : (
+                        <p className="text-green_light">Loading projects...</p>
+                    )}
+                </div>
+
+                {/* Desktop Grid Layout (visible on larger screens) */}
+                <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 lg:pl-10 md:pl-0 gap-8 md:gap-6 w-4/5 mx-auto">
                     {projects.length > 0 ? (
                         projects.map((project, index) => (
                             <NewProjectCase
