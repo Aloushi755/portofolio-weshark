@@ -27,23 +27,6 @@ export function SkillSlider() {
         <SiGithub />,
     ];
 
-    useEffect(() => {
-        if (!api) {
-            return;
-        }
-
-        const timer = setTimeout(() => {
-            if (api.selectedScrollSnap() + 1 === api.scrollSnapList().length) {
-                setCurrent(0);
-                api.scrollTo(0);
-            } else {
-                api.scrollNext();
-                setCurrent(current + 1);
-            }
-        }, 1000);
-
-        return () => clearTimeout(timer); // Cleanup timeout on unmount
-    }, [api, current]);
 
     return (
         <div className="relative w-full py-20 lg:py-40 bg-[#0d0c0c]">

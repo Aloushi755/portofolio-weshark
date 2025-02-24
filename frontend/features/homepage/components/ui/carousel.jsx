@@ -3,6 +3,7 @@
 import * as React from "react"
 import useEmblaCarousel from "embla-carousel-react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
+import AutoScroll from 'embla-carousel-auto-scroll'
 
 import { cn } from "../lib/utils"
 import { Button } from "./button"
@@ -44,8 +45,14 @@ const Carousel = React.forwardRef(
                 speed: 5,
                 skipSnaps: false
             },
-            plugins
+            [AutoScroll({
+                playOnInit: true,
+                stopOnInteraction: false,
+                stopOnMouseEnter: true
+            }), ...(plugins || [])]
         )
+
+
         const [canScrollPrev, setCanScrollPrev] = React.useState(false)
         const [canScrollNext, setCanScrollNext] = React.useState(false)
 
@@ -58,14 +65,34 @@ const Carousel = React.forwardRef(
             setCanScrollNext(api.canScrollNext())
         }, [])
 
+        const resetAutoScroll = React.useCallback(() => {
+            if (api && api.plugins().autoScroll) {
+                api.plugins().autoScroll.reset()
+            }
+        }, [api])
+
         const scrollPrev = React.useCallback(() => {
             api?.scrollPrev();
-        }, [api]);
+            resetAutoScroll();
+        }, [api, resetAutoScroll]);
 
         const scrollNext = React.useCallback(() => {
             api?.scrollNext();
+            resetAutoScroll();
+        }, [api, resetAutoScroll]);
+
+
+        const handleMouseEnter = React.useCallback(() => {
+            if (api && api.plugins().autoScroll) {
+                api.plugins().autoScroll.stop();
+            }
         }, [api]);
 
+        const handleMouseLeave = React.useCallback(() => {
+            if (api && api.plugins().autoScroll) {
+                api.plugins().autoScroll.play();
+            }
+        }, [api]);
 
 
         const handleKeyDown = React.useCallback(
@@ -77,26 +104,10 @@ const Carousel = React.forwardRef(
                     event.preventDefault()
                     scrollNext()
                 }
+                resetAutoScroll()
             },
-            [scrollPrev, scrollNext]
+            [scrollPrev, scrollNext, resetAutoScroll]
         )
-
-        React.useEffect(() => {
-            if (!api || !autoplay) return;
-
-            const autoScroll = () => {
-                if (!api.canScrollNext()) {
-                    api.scrollTo(0);
-                } else {
-                    api.scrollNext();
-                }
-            };
-
-            const intervalId = setInterval(autoScroll, 3000);
-
-            return () => clearInterval(intervalId);
-        }, [api, autoplay]);
-
 
 
 
@@ -139,6 +150,8 @@ const Carousel = React.forwardRef(
                 <div
                     ref={ref}
                     onKeyDownCapture={handleKeyDown}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                     className={cn("relative", className)}
                     role="region"
                     aria-roledescription="carousel"
