@@ -47,7 +47,7 @@ export function Principles() {
                     <SwiperSlide>
                         <PrincipleCard
                             number="1"
-                            title="Adaptibility"
+                            title="Adaptability"
                             description="Throw a new framework at me, and I’ll have it up and running before I even finish Googling the docs. I adapt quickly to new tech stacks and workflows, learning what’s needed to get the job done efficiently."
                         />
                     </SwiperSlide>
