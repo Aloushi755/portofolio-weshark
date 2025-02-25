@@ -1,11 +1,8 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import { NewProjectCase } from "./NewProjectCase";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
-// Import React Icons
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 export function NewProject() {
