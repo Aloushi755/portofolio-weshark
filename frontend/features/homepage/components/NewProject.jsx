@@ -1,12 +1,15 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import { NewProjectCase } from "./NewProjectCase";
+import { SkeletonNewProjectCase } from "./SkeletonNewProjectCase";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 export function NewProject() {
     const [projects, setProjects] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [projectCount, setProjectCount] = useState(3); // Default to 3 skeletons while loading
     const swiperRef = useRef(null);
 
     useEffect(() => {
@@ -17,8 +20,15 @@ export function NewProject() {
                 }
                 return response.json();
             })
-            .then(data => setProjects(data))
-            .catch(error => console.error("Error fetching projects:", error));
+            .then(data => {
+                setProjects(data);
+                setProjectCount(data.length); // Set project count based on fetched data
+                setIsLoading(false);
+            })
+            .catch(error => {
+                console.error("Error fetching projects:", error);
+                setIsLoading(false);
+            });
     }, []);
 
     // Navigation handlers
@@ -46,7 +56,20 @@ export function NewProject() {
 
                 {/* Mobile Swiper (visible on small screens) */}
                 <div className="block sm:hidden w-full pl-12">
-                    {projects.length > 0 ? (
+                    {isLoading ? (
+                        <Swiper
+                            ref={swiperRef}
+                            slidesPerView={1.15}
+                            spaceBetween={16}
+                            className="mySwiper"
+                        >
+                            {[...Array(projectCount)].map((_, index) => (
+                                <SwiperSlide key={index}>
+                                    <SkeletonNewProjectCase />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    ) : projects.length > 0 ? (
                         <div>
                             <Swiper
                                 ref={swiperRef}
@@ -88,13 +111,17 @@ export function NewProject() {
                             </div>
                         </div>
                     ) : (
-                        <p className="text-green_light">Loading projects...</p>
+                        <p className="text-green_light">No projects found.</p>
                     )}
                 </div>
 
                 {/* Desktop Grid Layout (visible on larger screens) */}
                 <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 lg:pl-10 md:pl-0 gap-8 md:gap-6 w-4/5 mx-auto">
-                    {projects.length > 0 ? (
+                    {isLoading ? (
+                        [...Array(projectCount)].map((_, index) => (
+                            <SkeletonNewProjectCase key={index} />
+                        ))
+                    ) : projects.length > 0 ? (
                         projects.map((project, index) => (
                             <NewProjectCase
                                 key={index}
@@ -105,7 +132,7 @@ export function NewProject() {
                             />
                         ))
                     ) : (
-                        <p className="text-green_light">Loading projects...</p>
+                        <p className="text-green_light">No projects found.</p>
                     )}
                 </div>
             </div>
