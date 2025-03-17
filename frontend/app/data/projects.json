@@ -12,9 +12,9 @@
     "href": "https://fsholstebro.dk"
   },
   {
-    "title": "WESHARK",
-    "description": "My personal portofolio website about my projects and skills.",
-    "imageSrc": "/weshark.png",
-    "href": "https://alimoussa.dk"
+    "title": "Book Space",
+    "description": "A webapp created, where users can read and write reviews about books.",
+    "imageSrc": "/bookspace.png",
+    "href": "https://bookspace-gbm2.onrender.com"
   }
 ]
