@@ -3,8 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export function NewProjectCase({ title, description, imageSrc, href }) {
+    const slug = title.toLowerCase().replace(/\s+/g, '-'); // Generate slug from title
+
     return (
-        <Link href={href || ""} className="block w-full max-w-md mx-auto">
+        <Link href={`/projects/${slug}`} className="block w-full max-w-md mx-auto">
             <div className="flex flex-col-reverse justify-start items-start w-full h-auto bg-green_darker shadow-lg rounded-xl overflow-hidden transition-transform duration-300 ease-in-out sm:hover:scale-105">
                 <div className='flex justify-end w-full z-10'>
                     <Image
@@ -30,3 +32,4 @@ export function NewProjectCase({ title, description, imageSrc, href }) {
         </Link>
     );
 }
+

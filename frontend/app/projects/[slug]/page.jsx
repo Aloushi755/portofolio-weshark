@@ -16,7 +16,7 @@ export default function ProjectPage({ params }) {
 
     return (
         <div className="flex flex-col justify-center items-center w-full text-white px-8 py-8">
-            <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
+            <h1 className="text-3xl font-bold mb-4">{project.title}</h1>    
             <Image
                 src={project.imageSrc}
                 alt={project.title}
