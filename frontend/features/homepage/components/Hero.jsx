@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter';
+import Button from '@/global/components/Button';
 
 export function Hero() {
     return (
@@ -24,9 +25,12 @@ export function Hero() {
                             />
                         </span>
                     </h1>
-                    <a href='#' className='px-6 py-2 border-green_light bg-green_light border-2 rounded-full text-xs md:text-md uppercase text-green_dark hover:bg-transparent hover:text-green_light transition duration-400 ease-in-out'>
+                    <Button
+                        href="#"
+                        variant="primary"
+                    >
                         Download CV
-                    </a>
+                    </Button>
                 </div>
                 <div className='flex flex-col md:flex-row justify-center items-center mx-auto md:pl-0'>
                     <Image

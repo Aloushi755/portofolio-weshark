@@ -2,19 +2,40 @@
   {
     "title": "Resbook User",
     "description": "A booking system for users to make and manage reservations.",
+    "longDescription": "Resbook is a comprehensive booking system that enables users to easily make, view, and manage their reservations. The platform offers an intuitive interface for scheduling, real-time availability updates, and automated confirmation emails.",
     "imageSrc": "/resbookuser.png",
-    "href": "https://resbook.vercel.app"
+    "detailImageSrc": "/resbookadmin.png",
+    "href": "/projects/resbook-user",
+    "externalUrl": "https://resbook.vercel.app",
+    "type": "Web Application",
+    "client": "Resbook",
+    "year": "2023",
+    "technologies": ["React", "Next.js", "Tailwind CSS", "Node.js"]
   },
   {
     "title": "FS Holstebro",
     "description": "A website created for a local football club in Holstebro.",
+    "longDescription": "This website serves as the digital home for FS Holstebro football club, providing match schedules, team information, news updates, and community engagement features. The site was designed to enhance communication between the club and its supporters while showcasing the club's history and achievements.",
     "imageSrc": "/fsholstebro.png",
-    "href": "https://fsholstebro.dk"
+    "detailImageSrc": "/bambusworld.png",
+    "href": "/projects/fs-holstebro",
+    "externalUrl": "https://fsholstebro.dk",
+    "type": "Website",
+    "client": "FS Holstebro",
+    "year": "2022",
+    "technologies": ["WordPress", "CSS", "JavaScript", "PHP"]
   },
   {
     "title": "WESHARK",
     "description": "My personal portofolio website about my projects and skills.",
+    "longDescription": "WESHARK is a portfolio website showcasing my professional work, skills, and experience as a web developer. The site features a modern design with interactive elements, project showcases, and detailed information about my technical abilities and previous work.",
     "imageSrc": "/weshark.png",
-    "href": "https://fan.frederikbarbre.dk"
+    "detailImageSrc": "/Mealmate.png",
+    "href": "/projects/weshark",
+    "externalUrl": "https://fan.frederikbarbre.dk",
+    "type": "Portfolio Website",
+    "client": "Personal",
+    "year": "2023",
+    "technologies": ["React", "Tailwind CSS", "Next.js", "Framer Motion"]
   }
 ]
