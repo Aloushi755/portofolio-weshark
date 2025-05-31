@@ -10,3 +10,4 @@ export * from './components/PrincipleCard';
 export * from './components/Principles';
 export * from './components/SkillCard';
 export * from './components/SkillSlider';
+export * from './components/SkeletonNewProjectCase';

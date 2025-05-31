@@ -29,7 +29,7 @@
     "title": "Bookspace",
     "description": "A webapp created, where users can read and write reviews about books.",
     "longDescription": "Bookspace is a community-driven platform where book enthusiasts can share their thoughts and reviews on various books. Users can create accounts, write reviews, and engage with other readers. The platform aims to foster a love for reading and provide a space for discussions about literature.",
-    "imageSrc": "/weshark.png",
+    "imageSrc": "/bookspace.png",
     "detailImageSrc": "/banner-bookspace.webp",
     "href": "/projects/weshark",
     "externalUrl": "https://fan.frederikbarbre.dk",

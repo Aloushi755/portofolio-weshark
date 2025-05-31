@@ -26,7 +26,7 @@ export function Hero() {
                         </span>
                     </h1>
                     <Button
-                        href="#"
+                        href="https://www.linkedin.com/in/ali-el-haj-moussa-b25b98289/"
                         variant="primary"
                     >
                         Download CV
