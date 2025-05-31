@@ -70,40 +70,50 @@ export default function ProjectPage({ params }) {
     return (
         <>
             {/* ─────────────────────  FULL-WIDTH HERO  ───────────────────── */}
-            <section className="w-screen">
-                {/* the trick that actually stretches the background edge-to-edge */}
-                <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen py-12">
-                    <div className="mx-auto max-w-6xl flex items-center justify-center">
-                        <div className="rounded-xl overflow-hidden shadow-2xl bg-green_spotify py-2 pr-12">
-                            <div className="flex justify-end items-center gap-4 pb-4">
-                                <a href={project.githubUrl || "#"}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-white hover:text-green_light transition-colors"
-                                    title="View GitHub Repository">
-                                    <FaGithub size={24} />
-                                </a>
-                                <a href={project.externalUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-white hover:text-green_light transition-colors"
-                                    title="Visit Live Project">
-                                    <FaExternalLinkAlt size={20} />
-                                </a>
-                            </div>
-
+            <section className="relative w-full overflow-x-hidden">
+                <div className="left-1/2 right-1/2 w-screen max-w-[100vw] py-12 relative transform -translate-x-1/2">
+                    <div className="mx-auto flex items-center justify-center">
+                        {/* card that holds the icons + image */}
+                        <div className="w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl rounded-xl overflow-hidden shadow-2xl bg-white h-[60vh] relative">
+                            {/* hero image */}
                             <Image
                                 src={project.detailImageSrc || project.imageSrc}
                                 alt={project.title}
-                                width={1000}
-                                height={500}
+                                width={1400}      /* bigger intrinsic size for crispness */
+                                height={700}
                                 priority
-                                className="w-full h-[40vh] object-cover mx-auto"
+                                className="w-full h-auto object-cover object-center mx-auto"
                             />
+
+                            {/* action icons */}
+                            <div className="absolute top-8 left-8 flex flex-col items-start gap-3 z-10">
+                                <h1 className="text-green_oliven text-xl md:text-2xl lg:text-4xl tracking-tighter lg:max-w-7xl font-extrabold text-left uppercase">{project.title}</h1>
+                                <div className="flex items-center gap-3">
+                                    <a
+                                        href={project.githubUrl || "#"}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-white hover:text-green_light transition-colors bg-black/50 p-2 rounded-full"
+                                        title="View GitHub Repository"
+                                    >
+                                        <FaGithub size={24} />
+                                    </a>
+                                    <a
+                                        href={project.externalUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-white hover:text-green_light transition-colors bg-black/50 p-2 rounded-full"
+                                        title="Visit Live Project"
+                                    >
+                                        <FaExternalLinkAlt size={20} />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             {/* ─────────────────────  REST OF THE PAGE  ───────────────────── */}
             <div className="flex flex-col justify-center items-center w-full text-white px-8 py-16 max-w-7xl mx-auto">

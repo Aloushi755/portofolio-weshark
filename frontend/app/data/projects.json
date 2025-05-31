@@ -4,7 +4,7 @@
     "description": "A booking system for users to make and manage reservations.",
     "longDescription": "Resbook is a comprehensive booking system that enables users to easily make, view, and manage their reservations. The platform offers an intuitive interface for scheduling, real-time availability updates, and automated confirmation emails.",
     "imageSrc": "/resbookuser.png",
-    "detailImageSrc": "/resbookadmin.png",
+    "detailImageSrc": "/banner-project.webp",
     "href": "/projects/resbook-user",
     "externalUrl": "https://resbook.vercel.app",
     "type": "Web Application",
