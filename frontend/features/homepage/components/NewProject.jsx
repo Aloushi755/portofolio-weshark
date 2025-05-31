@@ -86,7 +86,7 @@ export function NewProject() {
                                             title={project.title}
                                             description={project.description}
                                             imageSrc={project.imageSrc}
-                                            href={project.href}
+                                            href={project.externalUrl}
                                         />
                                     </SwiperSlide>
                                 ))}
@@ -128,7 +128,7 @@ export function NewProject() {
                                 title={project.title}
                                 description={project.description}
                                 imageSrc={project.imageSrc}
-                                href={project.href}
+                                href={project.externalUrl}
                             />
                         ))
                     ) : (
