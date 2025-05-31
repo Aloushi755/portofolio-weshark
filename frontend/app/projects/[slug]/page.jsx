@@ -3,7 +3,8 @@ import Button from "@/global/components/Button";
 import Image from "next/image";
 import React from "react";
 import { FaGithub, FaExternalLinkAlt, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPhp, FaWordpress } from "react-icons/fa";
-import { SiTailwindcss, SiFirebase, SiMongodb, SiPostgresql, SiDocker, SiGithub, SiTypescript, SiExpress, SiRemix, SiNextdotjs, SiFramer } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { SiTailwindcss, SiFirebase, SiMongodb, SiPostgresql, SiDocker, SiGithub, SiTypescript, SiExpress, SiReactrouter, SiNextdotjs, SiFramer, SiMongoose } from "react-icons/si";
 import { Tooltip } from "@/global/components/Tooltip";
 
 export default function ProjectPage({ params }) {
@@ -33,7 +34,7 @@ export default function ProjectPage({ params }) {
             "Next.js": <SiNextdotjs />,
             "Node.js": <FaNodeJs />,
             "Express": <SiExpress />,
-            "Remix": <SiRemix />,
+            "React Router 7": <SiReactrouter />,
             "Framer Motion": <SiFramer />,
 
             // CSS Frameworks
@@ -44,6 +45,8 @@ export default function ProjectPage({ params }) {
             "MongoDB": <SiMongodb />,
             "PostgreSQL": <SiPostgresql />,
             "Firebase": <SiFirebase />,
+            "Mongoose": <SiMongoose />,
+            "MySQL": <GrMysql />,
 
             // Tools
             "Git": <FaGitAlt />,

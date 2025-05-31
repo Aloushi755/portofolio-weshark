@@ -29,7 +29,7 @@ export function Hero() {
                         href="https://www.linkedin.com/in/ali-el-haj-moussa-b25b98289/"
                         variant="primary"
                     >
-                        Download CV
+                        Find me on LinkedIn
                     </Button>
                 </div>
                 <div className='flex flex-col md:flex-row justify-center items-center mx-auto md:pl-0'>

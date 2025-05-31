@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPhp } from 'react-icons/fa';
-import { SiTailwindcss, SiFirebase, SiMongodb, SiPostgresql, SiDocker, SiGithub, SiTypescript, SiExpress, SiRemix } from 'react-icons/si';
+import { SiTailwindcss, SiMongodb, SiGithub, SiTypescript, SiExpress, SiReactrouter, SiMongoose } from 'react-icons/si';
+import { GrMysql } from "react-icons/gr";
 
 import {
     Carousel,
@@ -23,12 +24,13 @@ export function SkillSlider() {
         <FaGitAlt />,
         <FaPhp />,
         <SiTailwindcss />,
-        <SiPostgresql />,
+        <GrMysql />,
         <SiGithub />,
         <SiExpress />,
-        <SiRemix />,
+        <SiReactrouter />,
         <SiMongodb />,
-        <SiTypescript />
+        <SiTypescript />,
+        <SiMongoose />
     ];
 
     // Create a new array with duplicated items at the start and end

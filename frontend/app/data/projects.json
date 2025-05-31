@@ -7,10 +7,10 @@
     "detailImageSrc": "/banner-project.webp",
     "href": "/projects/resbook-user",
     "externalUrl": "https://resbook.vercel.app",
-    "type": "Web Application",
-    "client": "Resbook",
+    "type": "Full Stack Web Application",
+    "client": "School Project",
     "year": "2023",
-    "technologies": ["React", "Next.js", "Tailwind CSS", "Node.js"]
+    "technologies": ["React", "Next.js", "Tailwind CSS", "PHP", "MySQL"]
   },
   {
     "title": "FS Holstebro",
@@ -32,10 +32,17 @@
     "imageSrc": "/bookspace.png",
     "detailImageSrc": "/banner-bookspace.webp",
     "href": "/projects/weshark",
-    "externalUrl": "https://fan.frederikbarbre.dk",
-    "type": "Portfolio Website",
-    "client": "Personal",
+    "externalUrl": "https://bookspace-gbm2.onrender.com/",
+    "type": "Full Stack Web Application",
+    "client": "School Project",
     "year": "2023",
-    "technologies": ["React", "Tailwind CSS", "Next.js", "Framer Motion"]
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "React Router 7",
+      "MongoDB",
+      "TypeScript",
+      "Mongoose"
+    ]
   }
 ]
