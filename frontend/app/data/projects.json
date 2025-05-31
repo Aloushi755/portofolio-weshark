@@ -26,11 +26,11 @@
     "technologies": ["WordPress", "CSS", "JavaScript", "PHP"]
   },
   {
-    "title": "WESHARK",
-    "description": "My personal portofolio website about my projects and skills.",
-    "longDescription": "WESHARK is a portfolio website showcasing my professional work, skills, and experience as a web developer. The site features a modern design with interactive elements, project showcases, and detailed information about my technical abilities and previous work.",
+    "title": "Bookspace",
+    "description": "A webapp created, where users can read and write reviews about books.",
+    "longDescription": "Bookspace is a community-driven platform where book enthusiasts can share their thoughts and reviews on various books. Users can create accounts, write reviews, and engage with other readers. The platform aims to foster a love for reading and provide a space for discussions about literature.",
     "imageSrc": "/weshark.png",
-    "detailImageSrc": "/Mealmate.png",
+    "detailImageSrc": "/banner-bookspace.webp",
     "href": "/projects/weshark",
     "externalUrl": "https://fan.frederikbarbre.dk",
     "type": "Portfolio Website",
