@@ -7,6 +7,7 @@ export default function Button({
     size = 'medium',
     className = '',
     onClick = null,
+    newTab = false,
 }) {
     // Define styling variants
     const variants = {
@@ -28,7 +29,12 @@ export default function Button({
 
     if (href) {
         return (
-            <Link href={href} className={buttonClasses}>
+            <Link
+                href={href}
+                className={buttonClasses}
+                target={newTab ? "_blank" : "_self"}
+                rel={newTab ? "noopener noreferrer" : undefined}
+            >
                 {children}
             </Link>
         );

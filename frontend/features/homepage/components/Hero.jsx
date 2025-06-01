@@ -28,6 +28,7 @@ export function Hero() {
                     <Button
                         href="https://www.linkedin.com/in/ali-el-haj-moussa-b25b98289/"
                         variant="primary"
+                        newTab={true}
                     >
                         Find me on LinkedIn
                     </Button>

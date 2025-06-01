@@ -2,10 +2,12 @@ import projects from "@/app/data/projects.json";
 import Button from "@/global/components/Button";
 import Image from "next/image";
 import React from "react";
-import { FaGithub, FaExternalLinkAlt, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPhp, FaWordpress } from "react-icons/fa";
+import { FaGithub, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPhp, FaWordpress } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { SiTailwindcss, SiFirebase, SiMongodb, SiPostgresql, SiDocker, SiGithub, SiTypescript, SiExpress, SiReactrouter, SiNextdotjs, SiFramer, SiMongoose } from "react-icons/si";
 import { Tooltip } from "@/global/components/Tooltip";
+import { BsArrowUpRight } from "react-icons/bs";
+import { Footer } from "@/global/components";
 
 export default function ProjectPage({ params }) {
     const { slug } = params;
@@ -108,7 +110,7 @@ export default function ProjectPage({ params }) {
                                         className="text-white hover:text-green_light transition-colors bg-black/50 p-2 rounded-full"
                                         title="Visit Live Project"
                                     >
-                                        <FaExternalLinkAlt size={20} />
+                                        <BsArrowUpRight size={22} />
                                     </a>
                                 </div>
                             </div>
@@ -122,20 +124,22 @@ export default function ProjectPage({ params }) {
             <div className="flex flex-col justify-center items-center w-full text-white px-8 py-16 max-w-7xl mx-auto">
                 {/* ------------- overview + sidebar ------------- */}
                 <div className="flex flex-col md:flex-row w-full max-w-5xl gap-12">
-                    {/* overview */}
                     <div className="w-full md:w-2/3">
                         <div className="flex flex-col justify-center items-start gap-2 w-full py-4">
                             <h2 className="text-white text-xl md:text-2xl lg:text-3xl tracking-tighter lg:max-w-7xl font-regular text-left uppercase">
                                 A showcase of the project<br />
                                 <span className="text-green_light font-bold italic">About {project.title}</span>
                             </h2>
-                        </div>                        <p className="text-lg text-gray-300 mb-6">
+                        </div>
+                        <p className="text-lg text-gray-300 mb-6">
                             {project.longDescription || project.description}
                         </p>
 
                         <Button
                             href={project.externalUrl}
                             variant="primary"
+                            target="_blank"
+                            newTab={true}
                         >
                             Visit {project.title}
                         </Button>
@@ -179,6 +183,7 @@ export default function ProjectPage({ params }) {
                     </aside>
                 </div>
             </div >
+            <Footer />
         </>
     );
 }
