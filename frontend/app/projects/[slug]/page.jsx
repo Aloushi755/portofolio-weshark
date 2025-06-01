@@ -79,7 +79,7 @@ export default function ProjectPage({ params }) {
                 <div className="left-1/2 right-1/2 w-screen max-w-[100vw] p-0 md:py-12 relative transform -translate-x-1/2">
                     <div className="mx-auto flex items-center justify-center">
                         {/* card that holds the icons + image */}
-                        <div className="w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl rounded-xl overflow-hidden shadow-2xl bg-white h-[25vh] relative md:h-[50vh] lg:h-auto hero-section">
+                        <div className="w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl rounded-b-xl md:rounded-xl overflow-hidden shadow-2xl bg-white h-[25vh] relative md:h-[50vh] lg:h-auto hero-section">
                             {/* hero image */}
                             <Image
                                 src={project.detailImageSrc || project.imageSrc}
