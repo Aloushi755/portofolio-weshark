@@ -34,7 +34,7 @@ export function SkillSlider() {
     ];
 
     // Create a new array with duplicated items at the start and end
-    const extendedIcons = [...icons.slice(-3), ...icons, ...icons.slice(0, 3)];
+    const extendedIcons = [...icons];
 
     return (
         <div className="relative w-full py-20 lg:py-40 bg-[#0d0c0c]">
