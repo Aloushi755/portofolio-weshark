@@ -9,8 +9,8 @@ import { Tooltip } from "@/global/components/Tooltip";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Footer } from "@/global/components";
 
-export default function ProjectPage({ params }) {
-    const { slug } = params;
+export default async function ProjectPage({ params }) {
+    const { slug } = await params;
     const project = projects.find(p => {
         const hrefParts = p.href.split("/");
         const projectSlug = hrefParts[hrefParts.length - 1];
