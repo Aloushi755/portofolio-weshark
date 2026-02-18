@@ -1,4 +1,4 @@
-import { Sidebar, SmoothScrolling } from '@/global/components';
+import { Sidebar } from '@/global/components';
 import './globals.css';
 import { Montserrat } from 'next/font/google';
 
@@ -13,17 +13,16 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>WESHARK</title>
+        <meta name="description" content="WESHARK is a platform for sharing and discovering content." />
       </head>
 
       <body className={montserrat.className}>
-        <SmoothScrolling>
-          <div className="layout">
-            <Sidebar />
-            <div className="main-content">
-              <main>{children}</main>
-            </div>
+        <div className="layout scroll-smooth">
+          <Sidebar />
+          <div className="main-content">
+            <main>{children}</main>
           </div>
-        </SmoothScrolling>
+        </div>
       </body>
     </html>
   );
