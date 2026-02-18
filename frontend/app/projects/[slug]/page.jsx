@@ -11,11 +11,7 @@ import { Footer } from "@/global/components";
 
 export default async function ProjectPage({ params }) {
     const { slug } = await params;
-    const project = projects.find(p => {
-        const hrefParts = p.href.split("/");
-        const projectSlug = hrefParts[hrefParts.length - 1];
-        return projectSlug === slug;
-    });
+    const project = projects.find(p => p.href === `/projects/${slug}`);
 
     // Function to get the icon for a specific technology
     const getTechIcon = (tech) => {
