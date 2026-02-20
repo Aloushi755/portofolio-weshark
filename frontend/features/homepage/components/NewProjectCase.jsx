@@ -5,7 +5,7 @@ import Image from 'next/image';
 export function NewProjectCase({ title, description, imageSrc, href }) {
     return (
         <Link href={href || ""} className="block w-full max-w-4xl mx-auto">
-            <div className="relative flex flex-col justify-start items-start w-full h-auto min-h-[320px] md:min-h-[380px] bg-green_darker shadow-lg rounded-xl overflow-hidden">
+            <div className="relative flex flex-col justify-start items-start w-full h-auto min-h-[380px] bg-green_darker shadow-lg rounded-xl overflow-hidden">
                 <div className='absolute top-[6.6rem] left-4 w-full h-full'>
                     <Image
                         src={imageSrc}
