@@ -9,7 +9,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 export function NewProject() {
     const [projects, setProjects] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-    const [projectCount, setProjectCount] = useState(3); // Default to 3 skeletons while loading
+    const [projectCount, setProjectCount] = useState(4);
     const swiperRef = useRef(null);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ export function NewProject() {
             })
             .then(data => {
                 setProjects(data);
-                setProjectCount(data.length); // Set project count based on fetched data
+                setProjectCount(data.length);
                 setIsLoading(false);
             })
             .catch(error => {
@@ -31,7 +31,6 @@ export function NewProject() {
             });
     }, []);
 
-    // Navigation handlers
     const handlePrev = () => {
         if (swiperRef.current && swiperRef.current.swiper) {
             swiperRef.current.swiper.slidePrev();
