@@ -1,6 +1,8 @@
 import { Sidebar } from '@/global/components';
 import './globals.css';
 import { Montserrat } from 'next/font/google';
+import Page from './page';
+import { PageTransition } from '@/global/components';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -20,7 +22,9 @@ export default function RootLayout({ children }) {
         <div className="layout scroll-smooth">
           <Sidebar />
           <div className="main-content">
-            <main>{children}</main>
+            <PageTransition>
+              <main>{children}</main>
+            </PageTransition>
           </div>
         </div>
       </body>
