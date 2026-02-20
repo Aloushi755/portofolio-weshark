@@ -1,37 +1,22 @@
 [
   {
-    "title": "Resbook User",
-    "description": "A booking system for users to make and manage reservations.",
-    "longDescription": "Resbook is a comprehensive booking system that enables users to easily make, view, and manage their reservations. The platform offers an intuitive interface for scheduling, real-time availability updates, and automated confirmation emails.",
-    "imageSrc": "/resbookuser.png",
-    "detailImageSrc": "/banner-project.webp",
-    "href": "/projects/resbook-user",
-    "externalUrl": "https://resbook.vercel.app",
-    "githubUrl": "https://github.com/eaaa-dob-wu-e24a/RESBOOK",
+    "title": "Alekz",
+    "description": "A website created for a clothing designer.",
+    "longDescription": "Alekz is a modern portofolio website created for a clothing designer. The website showcases latest collections, provides information about the designer, and offers a contact form for potential clients. The design is sleek and minimalist, focusing on high-quality images to highlight the designer's work.",
+    "imageSrc": "/alekz-new.png",
+    "detailImageSrc": "/alekz-banner-new.webp",
+    "href": "/projects/alekz",
+    "externalUrl": "https://alekz.com/",
+    "githubUrl": "https://github.com/Aloushi755/alekz-website",
     "type": "Full Stack Web Application",
-    "client": "School Project",
-    "year": "2025",
-    "technologies": ["React", "Next.js", "Tailwind CSS", "PHP", "MySQL"]
-  },
-  {
-    "title": "Candidate",
-    "description": "Students create profiles for recruiters to discover and connect.",
-    "longDescription": "Candidate is a professional networking platform designed for students to showcase their skills and experiences. Students can create detailed profiles, upload resumes, and highlight their achievements. Recruiters can search for candidates based on specific criteria, making it easier to find the right talent for job openings.",
-    "imageSrc": "/candidate.png",
-    "detailImageSrc": "/candidate-banner.webp",
-    "href": "/projects/candidate",
-    "externalUrl": "https://candidate-dk-staging-phqud.ondigitalocean.app/",
-    "githubUrl": "https://github.com/eaaa-golden-candidates/candidate.dk",
-    "type": "Website",
     "client": "School Project",
     "year": "2025",
     "technologies": [
       "React",
-      "React Router 7",
+      "Next.js",
       "TypeScript",
-      "MongoDB",
-      "Mongoose",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "Sanity CMS"
     ]
   },
   {
@@ -53,6 +38,41 @@
       "MongoDB",
       "TypeScript",
       "Mongoose"
+    ]
+  },
+  {
+    "title": "Weaccess",
+    "description": "A B2B website created for a company that sells keyless entry systems.",
+    "longDescription": "Weaccess is a B2B website for a company that sells keyless entry systems. The website provides information about the company's products, showcases their features and benefits, and offers a contact form for potential clients. The design is professional and user-friendly, focusing on clear communication of product value.",
+    "imageSrc": "/weaccees-new.png",
+    "detailImageSrc": "/weaccess-banner.webp",
+    "href": "/projects/weaccess",
+    "externalUrl": "https://weaccess.dk/b2b/",
+    "githubUrl": "https://github.com/Aloushi755/weaccess",
+    "type": "Full Stack Web Application",
+    "client": "School Project",
+    "year": "2025",
+    "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "JSON"]
+  },
+  {
+    "title": "Candidate",
+    "description": "Students create profiles for recruiters to discover and connect.",
+    "longDescription": "Candidate is a professional networking platform designed for students to showcase their skills and experiences. Students can create detailed profiles, upload resumes, and highlight their achievements. Recruiters can search for candidates based on specific criteria, making it easier to find the right talent for job openings.",
+    "imageSrc": "/candidate-new.png",
+    "detailImageSrc": "/candidate-banner.webp",
+    "href": "/projects/candidate",
+    "externalUrl": "https://candidate-dk-staging-phqud.ondigitalocean.app/",
+    "githubUrl": "https://github.com/eaaa-golden-candidates/candidate.dk",
+    "type": "Website",
+    "client": "School Project",
+    "year": "2025",
+    "technologies": [
+      "React",
+      "React Router 7",
+      "TypeScript",
+      "MongoDB",
+      "Mongoose",
+      "Tailwind CSS"
     ]
   }
 ]

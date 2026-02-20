@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { FaGithub, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPhp, FaWordpress } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
-import { SiTailwindcss, SiFirebase, SiMongodb, SiPostgresql, SiDocker, SiGithub, SiTypescript, SiExpress, SiReactrouter, SiNextdotjs, SiFramer, SiMongoose } from "react-icons/si";
+import { SiTailwindcss, SiFirebase, SiMongodb, SiPostgresql, SiDocker, SiGithub, SiTypescript, SiExpress, SiReactrouter, SiNextdotjs, SiFramer, SiMongoose, SiSanity, SiJson } from "react-icons/si";
 import { Tooltip } from "@/global/components/Tooltip";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Footer } from "@/global/components";
@@ -53,7 +53,9 @@ export default async function ProjectPage({ params }) {
 
             // CMS & Other
             "PHP": <FaPhp />,
-            "WordPress": <FaWordpress />
+            "WordPress": <FaWordpress />,
+            "Sanity CMS": <SiSanity />,
+            "JSON": <SiJson />
         };
 
         // Default case if no match is found - return the name as text

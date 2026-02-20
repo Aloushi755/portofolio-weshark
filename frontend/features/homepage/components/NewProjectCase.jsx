@@ -4,18 +4,18 @@ import Image from 'next/image';
 
 export function NewProjectCase({ title, description, imageSrc, href }) {
     return (
-        <Link href={href || ""} className="block w-full max-w-md mx-auto">
-            <div className="flex flex-col-reverse justify-start items-start w-full h-auto bg-green_darker shadow-lg rounded-xl overflow-hidden transition-transform duration-300 ease-in-out sm:hover:scale-105">
-                <div className='flex justify-end w-full z-10]'>
+        <Link href={href || ""} className="block w-full max-w-4xl mx-auto">
+            <div className="relative flex flex-col justify-start items-start w-full h-auto min-h-[320px] md:min-h-[380px] bg-green_darker shadow-lg rounded-xl overflow-hidden">
+                <div className='absolute top-[6.6rem] left-4 w-full h-full'>
                     <Image
                         src={imageSrc}
                         alt={title}
-                        width={500}
-                        height={400}
-                        className="w-[18rem] h-[21rem] sm:h-72 object-cover"
+                        fill
+                        className="object-cover object-bottom-right scale-[1.2] transition-transform duration-300 ease-in-out sm:hover:scale-[1.26]"
+                        priority={true}
                     />
                 </div>
-                <div className="flex flex-col justify-start items-start gap-2 w-full pt-6 px-6 sm:p-6">
+                <div className="relative z-10 flex flex-col justify-start items-start gap-2 w-full p-6">
                     <h2 className="text-white text-xl md:text-xl tracking-tighter font-bold text-left uppercase">
                         {title} <span className="text-green_light">.</span>
                     </h2>
