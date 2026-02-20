@@ -38,20 +38,6 @@ export function Footer() {
                             bgColor="transparent"
                             fgColor="currentColor"
                         />
-                        <SocialIcon
-                            url="https://www.facebook.com/aloushi.moussa/"
-                            aria-label="Facebook"
-                            className="rounded-full w-8 h-8 text-green_army hover:text-green_light"
-                            bgColor="transparent"
-                            fgColor="currentColor"
-                        />
-                        <SocialIcon
-                            url="https://www.instagram.com/da_real_aloushi/"
-                            aria-label="Instagram"
-                            className="rounded-full w-8 h-8 text-green_army hover:text-green_light"
-                            bgColor="transparent"
-                            fgColor="currentColor"
-                        />
                     </div>
                 </div>
             </div>
