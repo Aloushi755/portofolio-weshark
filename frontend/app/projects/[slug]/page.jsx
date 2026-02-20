@@ -13,7 +13,6 @@ export default async function ProjectPage({ params }) {
     const { slug } = await params;
     const project = projects.find(p => p.href === `/projects/${slug}`);
 
-    // Function to get the icon for a specific technology
     const getTechIcon = (tech) => {
         const iconMap = {
             // Common web technologies
@@ -72,23 +71,20 @@ export default async function ProjectPage({ params }) {
 
     return (
         <>
-            {/* ─────────────────────  FULL-WIDTH HERO  ───────────────────── */}
             <section className="relative w-full overflow-x-hidden bg-green_spotify md:bg-transparent">
                 <div className="left-1/2 right-1/2 w-screen max-w-[100vw] p-0 md:py-12 relative transform -translate-x-1/2">
                     <div className="mx-auto flex items-center justify-center">
-                        {/* card that holds the icons + image */}
                         <div className="w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl rounded-b-xl md:rounded-xl overflow-hidden shadow-2xl bg-white h-[25vh] relative md:h-[50vh] lg:h-auto hero-section">
-                            {/* hero image */}
                             <Image
                                 src={project.detailImageSrc || project.imageSrc}
                                 alt={project.title}
                                 width={1400}
                                 height={700}
                                 priority
+                                quality={85}
                                 className="w-full h-auto object-cover object-center mx-auto"
                             />
 
-                            {/* action icons - visible only on md and larger screens */}
                             <div className="absolute top-6 left-10 hidden md:flex flex-col items-start gap-3">
                                 <h1 className="text-green_oliven text-xl md:text-2xl lg:text-4xl tracking-tighter lg:max-w-7xl font-extrabold text-left uppercase">{project.title}</h1>
                                 <div className="flex items-center gap-3">
@@ -117,7 +113,6 @@ export default async function ProjectPage({ params }) {
                 </div>
             </section>
 
-            {/* Mobile title and action icons - below the hero image */}
             <div className="md:hidden flex justify-between items-center w-full px-6 py-4 bg-green_spotify">
                 <h1 className="text-white text-xl font-extrabold uppercase pl-3">{project.title}<span className="text-green_light pl-1">.</span></h1>
                 <div className="flex items-center gap-3">
@@ -178,7 +173,6 @@ export default async function ProjectPage({ params }) {
                         )}
                     </aside>
 
-                    {/* Project description - appears second on mobile but first on desktop */}
                     <div className="w-full lg:w-2/3 order-2 lg:order-1">
                         <div className="flex flex-col justify-center items-start gap-2 w-full py-4">
                             <h2 className="text-white text-xl md:text-2xl lg:text-3xl tracking-tighter lg:max-w-7xl font-regular text-left uppercase">
