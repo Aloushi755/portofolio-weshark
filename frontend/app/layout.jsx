@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>WESHARK</title>
-        <meta name="description" content="WESHARK is a platform for sharing and discovering content." />
+        <meta name="description" content="This is my personal portfolio website, where I showcase my projects and skills." />
       </head>
 
       <body className={montserrat.className}>
