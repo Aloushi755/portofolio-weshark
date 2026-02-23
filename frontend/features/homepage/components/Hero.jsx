@@ -36,7 +36,7 @@ export function Hero() {
                 <div className='flex flex-col md:flex-row justify-center items-center mx-auto md:pl-0'>
                     <Image
                         className='rounded-full object-cover object-left-top border-4 border-green_light w-80 h-80 lg:w-[400px] lg:h-[400px]'
-                        src="/newme.webp"
+                        src="/passion.jpg"
                         alt="Hero Image"
                         width={500}
                         height={500}
