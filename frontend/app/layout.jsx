@@ -1,7 +1,6 @@
 import { Sidebar } from '@/global/components';
 import './globals.css';
 import { Montserrat } from 'next/font/google';
-import Page from './page';
 import { PageTransition } from '@/global/components';
 
 const montserrat = Montserrat({
@@ -15,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>WESHARK</title>
-        <meta name="description" content="This is my personal portfolio website, where I showcase my projects and skills." />
+        <meta name="description" content="Hi, My name is Ali Moussa and this is my personal portfolio website, where I showcase my projects and skills." />
       </head>
 
       <body className={montserrat.className}>
